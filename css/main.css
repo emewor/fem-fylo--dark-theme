@@ -1,0 +1,68 @@
+/* Raleway */
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+}
+
+/* Open Sans */
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/open_sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/open_sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+    font-style: italic;
+}
+
+:root {
+    /* primary */
+    --pri-clr__dark-blue: hsl(217, 28%, 15%);
+    --main__bg-clr: hsl(218, 28%, 13%);
+    --footer__bg-clr: hsl(216, 53%, 9%);
+    --testimonials__bg-clr: hsl(219, 30%, 18%);
+    /* accent */
+    --acc-clr__cyan: hsl(176, 68%, 64%);
+    --acc-clr__blue: hsl(198, 60%, 50%);
+    --acc-clr__light-red: hsl(0, 100%, 63%);
+    /* neutral */
+    --neu-clr__white: hsl(0, 0%, 100%);
+    /* default fs */
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+/* nodes modifier */
+
+.node__pos-rel {
+    position: relative;
+}
+
+.node__pos-abs {
+    position: absolute;
+}
+
+.node__pos-fix {
+    position: fixed;
+}
+
+.node--hidden {
+    display: none;
+}
