@@ -1,0 +1,41 @@
+/* inner */
+.inner {
+    display: flex;
+    padding: 1rem 2rem;
+    overflow: hidden;
+}
+
+/* brand */
+.brand-group {
+    display: flex;
+    width: fit-content;
+}
+
+.brand {
+    width: 100%;
+    height: min-content;
+}
+
+/* nav */
+.nav {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    width: fit-content;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+}
+
+.menu__link {
+    font-family: "Raleway";
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: var(--neu-clr__white);
+}
