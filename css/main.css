@@ -73,19 +73,69 @@
     opacity: 0.8;
 }
 
-/* nodes modifier */
-
-.node__pos-rel {
+/* main */
+.hero__inner {
     position: relative;
+    padding: 18rem 0 0;
 }
 
-.node__pos-abs {
+.hero__inner::before,
+.hero__inner::after {
+    content: "";
     position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.node__pos-fix {
-    position: fixed;
+.hero__inner::before {
+    background: url("../images/bg-curvy-mobile.svg") 
+                    no-repeat;
+    background-position: 0 208px;
+    z-index: -1;
 }
+
+.hero__inner::after {
+    background: url("../images/illustration-intro.png") 
+                    no-repeat;
+    background-size: 304px auto;
+    background-position: 50% 24px;
+    z-index: 0;
+}
+
+.hero__content {
+    margin-block-start: 3.5rem;
+    flex-direction: column;
+    padding-block-end: 2rem;
+    background-color: var(--main__bg-clr);
+    z-index: 10;
+}
+
+.hero__copy,
+.hero__cta-group {
+    padding-inline: 2rem;
+}
+
+.hero__copy {
+    margin-block-start: -4.875rem;
+}
+
+.hero__heading {
+    margin-block-end: 0.5rem;
+    line-height: 2.25rem;
+}
+
+.hero__sub-heading {
+    margin-block-start: 0.5rem;
+}
+
+.hero__cta-group {
+    margin-block-start: 1.125rem;
+}
+
+/* nodes modifier */
 
 .node--hidden {
     display: none;
