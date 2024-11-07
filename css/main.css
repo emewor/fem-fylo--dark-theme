@@ -135,6 +135,35 @@
     margin-block-start: 1.125rem;
 }
 
+/* features */
+.features__content {
+    margin-block-start: 3rem;
+}
+
+.features__card {
+    margin-block: 2.25rem 3.0625rem;
+}
+
+.features__card-img {
+    margin-block-end: 0.9375rem;
+}
+
+.features__card-vector {
+    width: 78%;
+    height: auto;
+}
+
+.features__card-heading {
+    margin-block-end: 0;
+    font-size: 1.125rem;
+    letter-spacing: 0.0125rem;
+}
+
+.features__card-sub-heading {
+    margin-block-start: 0.4375rem;
+    line-height: 1.25rem;
+}
+
 /* nodes modifier */
 
 .node--hidden {
